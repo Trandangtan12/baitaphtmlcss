@@ -30,9 +30,7 @@ ul>li:nth-child(odd) {
     background-color: #f4f6f7;
 }
 
-
 /* -------- */
-
 
 /* css class */
 
@@ -48,9 +46,11 @@ ul>li:nth-child(odd) {
     gap: 3rem;
 }
 
-.col {
+.relative{
     position: relative;
 }
+
+
 
 .bg-white {
     background-color: white;
@@ -218,7 +218,6 @@ ul>li:nth-child(odd) {
     color: white;
 }
 
-
 /* responsive */
 
 @media only screen and (max-width: 768px) {
@@ -252,7 +251,6 @@ ul>li:nth-child(odd) {
         left: 38%;
         z-index: 50;
     }
-    
 }
 
 /* --------------- */
