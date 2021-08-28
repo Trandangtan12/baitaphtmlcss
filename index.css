@@ -1,10 +1,10 @@
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #cad3d3;
     text-align: center;
     box-sizing: border-box;
 }
+
 ul {
     padding: 0;
     margin: 0;
@@ -19,8 +19,7 @@ ul>li {
     color: #5f727f;
 }
 
-
-.nth-child-odd>li:nth-child(odd){
+.nth-child-odd>li:nth-child(odd) {
     background-color: #f4f6f7;
 }
 
@@ -36,7 +35,7 @@ ul>li {
     gap: 3rem;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
@@ -54,31 +53,31 @@ ul>li {
     z-index: 50;
 }
 
-.bg-white{
+.bg-white {
     background-color: white;
 }
 
-.bg-dark-purple{
+.bg-dark-purple {
     background-color: #2c2e3d;
 }
 
-.bg-green{
+.bg-green {
     background-color: #40b22d;
 }
 
-.weight-100{
+.weight-100 {
     font-weight: 100;
 }
 
-.text-color-purple{
+.text-color-purple {
     color: #5a3455;
 }
 
-.text-color-green{
+.text-color-green {
     color: #40b22d;
 }
 
-.text-color-blue{
+.text-color-blue {
     color: #5cb2f9;
 }
 
@@ -125,7 +124,7 @@ ul>li {
     height: 100px;
 }
 
-.text-color-gray{
+.text-color-gray {
     color: #5f727f;
 }
 
@@ -195,10 +194,9 @@ ul>li {
     color: white;
 }
 
-
 /* responsive */
 
-@media only screen and (min-width: 320px) and (max-width: 768px){
+@media only screen and (min-width: 320px) and (max-width: 780px) {
     .container {
         width: 100%;
         margin: auto;
@@ -226,7 +224,8 @@ ul>li {
         bottom: 0;
     }
 }
-@media only screen and (max-width: 1080px) and (min-width: 786px) {
+
+@media only screen and (max-width: 1080px) and (min-width: 780px) {
     .container {
         width: 100%;
         margin: auto;
@@ -247,4 +246,3 @@ ul>li {
         z-index: 50;
     }
 }
-
