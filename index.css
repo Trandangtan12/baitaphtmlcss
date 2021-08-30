@@ -24,7 +24,7 @@ ul>li {
 }
 
 .container {
-    width: 90%;
+    width: auto;
     margin: auto;
     padding: 5%;
 }
@@ -33,6 +33,9 @@ ul>li {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3rem;
+}
+.col{
+    width: 100%;
 }
 
 .relative {
@@ -48,8 +51,9 @@ ul>li {
     width: 120px;
     height: 120px;
     position: absolute;
-    top: -60px;
-    left: 35%;
+    /* top: -60px;
+    left: 35%; */
+    transform: translate(127%, -50%);
     z-index: 50;
 }
 
@@ -196,11 +200,11 @@ ul>li {
 
 /* responsive */
 
-@media only screen and (min-width: 320px) and (max-width: 780px) {
+@media only screen and (min-width: 375px) and (max-width: 768px) {
     .container {
-        width: 100%;
+        width: auto;
         margin: auto;
-        padding: 60px 0;
+        padding: 20% 0;
     }
     .row {
         display: grid;
@@ -209,11 +213,10 @@ ul>li {
     }
     .price {
         border-radius: 100%;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         position: absolute;
-        top: -60px;
-        left: 35%;
+        transform: translate(100%, -50%);
         z-index: 50;
     }
     .text-img {
@@ -225,11 +228,17 @@ ul>li {
     }
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 780px) {
+@media only screen and (min-width: 540px) and (max-width: 720px) {
+    .price {
+        transform: translate(145%, -50%);
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
     .container {
-        width: 100%;
+        width: auto;
         margin: auto;
-        padding: 60px 0;
+        padding: 5%;
     }
     .row {
         display: grid;
@@ -237,12 +246,18 @@ ul>li {
         gap: 5rem;
     }
     .price {
-        border-radius: 100%;
-        width: 100px;
-        height: 100px;
-        position: absolute;
-        top: -60px;
-        left: 35%;
-        z-index: 50;
+    
+        transform: translate(75%, -50%);
     }
 }
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .price {
+        transform: translate(122%, -50%);
+    }
+}
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+    .price {
+        transform: translate(180%, -50%);
+    }
+}
+
