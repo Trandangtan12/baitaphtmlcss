@@ -34,7 +34,8 @@ ul>li {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3rem;
 }
-.col{
+
+.col {
     width: 100%;
 }
 
@@ -51,9 +52,9 @@ ul>li {
     width: 120px;
     height: 120px;
     position: absolute;
-    /* top: -60px;
-    left: 35%; */
-    transform: translate(127%, -50%);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 50;
 }
 
@@ -216,7 +217,9 @@ ul>li {
         width: 120px;
         height: 120px;
         position: absolute;
-        transform: translate(100%, -50%);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 50;
     }
     .text-img {
@@ -230,7 +233,9 @@ ul>li {
 
 @media only screen and (min-width: 540px) and (max-width: 720px) {
     .price {
-        transform: translate(145%, -50%);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -246,18 +251,24 @@ ul>li {
         gap: 5rem;
     }
     .price {
-    
-        transform: translate(75%, -50%);
-    }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1366px) {
-    .price {
-        transform: translate(122%, -50%);
-    }
-}
-@media only screen and (min-width: 1920px) and (max-width: 3000px) {
-    .price {
-        transform: translate(180%, -50%);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+    .price {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+    .price {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
