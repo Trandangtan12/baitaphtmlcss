@@ -10,7 +10,7 @@ ul {
     margin: 0;
 }
 
-ul>li {
+ul li {
     list-style-type: none;
     display: flex;
     height: 50px;
