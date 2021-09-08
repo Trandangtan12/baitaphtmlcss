@@ -1,0 +1,147 @@
+$colorBlue: #5cb2f9;
+$colorGreen: #40b22d;
+$colorPurple: #5a3455;
+
+@mixin position($position) {
+  @if $position == "relative" {
+    position: relative;
+  }
+  @if $position == "price-absolute" {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+  @if $position == "text-img" {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+  }
+  @if $position == "opacity" {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cad3d3;
+  text-align: center;
+  color: #5f727f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-dark-purple {
+  background-color:#2c2e3d;
+}
+
+.weight-100 {
+  font-weight: 100;
+}
+
+.text-blue {
+  color: $colorBlue;
+}
+
+.text-purple {
+  color: $colorPurple;
+}
+
+.text-green{
+    color: $colorGreen;
+}
+
+.border-blue {
+  border: 1px solid $colorBlue;
+}
+
+.border-purple {
+  border: 1px solid $colorPurple;
+}
+
+.border-green {
+  border: 1px solid $colorGreen;
+}
+
+.container{
+  padding: 0 5% 5% 5%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .col {
+    height: auto;
+    width: 410px;
+    margin-top: 75px;
+    @include position("relative");
+    .price {
+      @include position("price-absolute");
+      border-radius: 100%;
+      width: 120px;
+      height: 120px;
+      z-index: 1;
+      &-title {
+        font-size: 30px;
+      }
+      &-text {
+        margin-top: -25px;
+      }
+    }
+    .bg-img {
+      @include position("relative");
+      .text-img {
+        @include position("text-img");
+        &-title {
+          font-weight: 100;
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+      .opacity {
+        @include position("opacity");
+        background-color: black;
+        opacity: 0.5;
+      }
+    }
+
+    .title {
+      height: 6rem;
+    }
+    .list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        height: 3rem;
+        align-items: center;
+        justify-content: center;
+        color: #5f727f;
+      }
+      li:nth-child(odd) {
+        background-color: #f4f6f7;
+      }
+    }
+    .box-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 6rem;
+      .btn{
+          padding: 10px 20px 10px 20px;
+      }
+    }
+  }
+}

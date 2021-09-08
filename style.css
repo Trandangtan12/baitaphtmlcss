@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cad3d3;
+  text-align: center;
+  color: #5f727f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-dark-purple {
+  background-color: #2c2e3d;
+}
+
+.weight-100 {
+  font-weight: 100;
+}
+
+.text-blue {
+  color: #5cb2f9;
+}
+
+.text-purple {
+  color: #5a3455;
+}
+
+.text-green {
+  color: #40b22d;
+}
+
+.border-blue {
+  border: 1px solid #5cb2f9;
+}
+
+.border-purple {
+  border: 1px solid #5a3455;
+}
+
+.border-green {
+  border: 1px solid #40b22d;
+}
+
+.container {
+  padding: 0 5% 5% 5%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.row .col {
+  height: auto;
+  width: 410px;
+  margin-top: 75px;
+  position: relative;
+}
+.row .col .price {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+}
+.row .col .price-title {
+  font-size: 30px;
+}
+.row .col .price-text {
+  margin-top: -25px;
+}
+.row .col .bg-img {
+  position: relative;
+}
+.row .col .bg-img .text-img {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+}
+.row .col .bg-img .text-img-title {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+}
+.row .col .bg-img .opacity {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.row .col .title {
+  height: 6rem;
+}
+.row .col .list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.row .col .list li {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  color: #5f727f;
+}
+.row .col .list li:nth-child(odd) {
+  background-color: #f4f6f7;
+}
+.row .col .box-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+}
+.row .col .box-btn .btn {
+  padding: 10px 20px 10px 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
