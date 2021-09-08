@@ -108,6 +108,11 @@ body {
           text-transform: uppercase;
           color: white;
         }
+        &-text {
+          margin-top: -10px;
+          color: white;
+          font-weight: 100
+        }
       }
       .opacity {
         @include position("opacity");
