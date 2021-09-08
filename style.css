@@ -33,15 +33,30 @@ body {
   color: #40b22d;
 }
 
-.border-blue {
+.btn-blue {
   border: 1px solid #5cb2f9;
 }
 
-.border-purple {
+.btn-purple {
   border: 1px solid #5a3455;
 }
 
-.border-green {
+.btn-green:hover {
+  background-color: #40b22d;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #5cb2f9;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #5a3455;
+  color: white;
+}
+
+.btn-green {
   border: 1px solid #40b22d;
 }
 
@@ -128,6 +143,19 @@ body {
 }
 .row .col .box-btn .btn {
   padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+.row .col .new {
+  position: absolute;
+  z-index: 1;
+  top: -2%;
+  left: -3%;
+}
+.row .col .new-text {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

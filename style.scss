@@ -42,7 +42,7 @@ body {
 }
 
 .bg-dark-purple {
-  background-color:#2c2e3d;
+  background-color: #2c2e3d;
 }
 
 .weight-100 {
@@ -57,23 +57,38 @@ body {
   color: $colorPurple;
 }
 
-.text-green{
-    color: $colorGreen;
+.text-green {
+  color: $colorGreen;
 }
 
-.border-blue {
+.btn-blue {
   border: 1px solid $colorBlue;
 }
 
-.border-purple {
+.btn-purple {
   border: 1px solid $colorPurple;
 }
 
-.border-green {
+.btn-green:hover {
+  background-color: $colorGreen;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: $colorBlue;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: $colorPurple;
+  color: white;
+}
+
+.btn-green {
   border: 1px solid $colorGreen;
 }
 
-.container{
+.container {
   padding: 0 5% 5% 5%;
 }
 
@@ -111,7 +126,7 @@ body {
         &-text {
           margin-top: -10px;
           color: white;
-          font-weight: 100
+          font-weight: 100;
         }
       }
       .opacity {
@@ -144,8 +159,21 @@ body {
       align-items: center;
       justify-content: center;
       height: 6rem;
-      .btn{
-          padding: 10px 20px 10px 20px;
+      .btn {
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+      }
+    }
+    .new {
+      position: absolute;
+      z-index: 1;
+      top: -2%;
+      left: -3%;
+      &-text {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        color: white;
       }
     }
   }
