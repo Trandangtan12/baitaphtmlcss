@@ -120,7 +120,7 @@ header {
   display: flex;
   margin: auto;
   overflow-x: auto;
-  height: 850px;
+  height: 900px;
   align-items: center;
   .col {
     min-width: 30%;
@@ -227,7 +227,6 @@ header {
 @media only screen and (max-width: 600px){
   header {
     h1 {
-      
       font-size: 15px;
     }
   }

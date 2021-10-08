@@ -92,7 +92,7 @@ header p span:hover {
   display: flex;
   margin: auto;
   overflow-x: auto;
-  height: 850px;
+  height: 900px;
   align-items: center;
 }
 .slide .col {
