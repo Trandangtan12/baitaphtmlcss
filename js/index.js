@@ -3,7 +3,7 @@ let col = document.getElementsByClassName('col');
 let slide = document.getElementsByClassName('slide')
 let col_page = Math.ceil(col.length/4);
 let l = 0;
-let movePer = 33.2;
+let movePer = 33.3;
 let maxMove = 306;
 
 //Mobile view
